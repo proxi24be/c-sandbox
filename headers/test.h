@@ -1,27 +1,26 @@
 /**
- * @return true (1) if the tests did end successfully otherwise an error (assert)
- * is raised up.
+ * @return true (1) if the tests did end successfully 
+ * otherwise an error (assert) is raised up.
  */
 int testParamStatic();
 
 /**
- * Basic test on pointer. Test the how the pointer is addressed and used.
- * @return true (1) if the tests did complete successfully otherwise an error (assert)
- * is raised up
+ * Basic test on pointer. Test how the pointer is addressed and used.
+ * @return true (1) if the tests did complete successfully 
+ * otherwise an error (assert) is raised up.
  */
 int testPointer1();
 
 
 /**
- * Test a function by using pointer as parameters
- * @param  a [description]
- * @param  b [description]
- * @return   [description]
+ * Test a function by using pointer as parameters.
+ * @return true (1) if the tests did end successfully 
+ * otherwise an error (assert)is raised up.
  */
 int testPointer2();
 
 /**
- * At every call that function will increment a by 1 and b by 2.
+ * At every call that function will increment "a" by 1 and "b" by 2.
  * 
  * @param  a int *
  * @param  b int *
