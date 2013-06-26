@@ -28,5 +28,4 @@ int testPointer2();
  */
 static void incrementBy1AndBy2(int *a, int *b);
 
-
 int testStaticArray();

@@ -1,6 +1,8 @@
 # include <stdio.h>
 # include <assert.h>
+# include <string.h>
 # include "sandbox.h"
+# include "stringTest.h"
 # include "test.h"
 
 
@@ -17,7 +19,10 @@ int main () {
 
 	if (testStaticArray())
 		printf("the test staticArray did end successfully\n");
-	
+
+	if (runStringTest())
+		printf("All the tests in stringTest.c did complete successfully\n");
+
 	return 0;
 }
 
