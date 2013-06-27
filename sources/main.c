@@ -4,6 +4,8 @@
 # include "sandbox.h"
 # include "stringTest.h"
 # include "test.h"
+# include "structTest.h"
+
 
 
 int main () {
@@ -22,6 +24,9 @@ int main () {
 
 	if (runStringTest())
 		printf("All the tests in stringTest.c did complete successfully\n");
+
+	if (runStructTest())
+		printf("All the tests in structTest.c did complete successfully\n");
 
 	return 0;
 }
