@@ -2,6 +2,10 @@
  * 	Test package on the library string.
  */
 
+# ifndef STRING_TEST
+
+# define STRING_TEST
+
 
 /**
  * Run all the tests included in the package stringTest.c
@@ -51,3 +55,4 @@ int testStringStr ();
  */
 int testSprintF ();
 
+# endif 

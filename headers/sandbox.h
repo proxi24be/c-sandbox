@@ -5,9 +5,14 @@
  * 
  */
 
+# ifndef SANDBOX
+# define SANDBOX
+
 /**
  * The local static params are initialized once : 
  * when the function is called the first time.
  * @return int.
  */
 int staticParam ();
+
+# endif
