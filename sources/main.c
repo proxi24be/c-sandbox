@@ -17,7 +17,12 @@ int main () {
 
 	if (testStaticArray())
 		printf("the test staticArray did end successfully\n");
-	
+
+	// magic !
+	int array[5] = {0}, x ;
+	for (x = 0; x < 5; x++)
+		printf("%d\n", array[x]);
+
 	return 0;
 }
 
