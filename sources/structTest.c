@@ -6,7 +6,8 @@
 int runStructTest () {
 	if (testCreateUser() 
 		&& testInitUserParams() 
-		&& testConstructUser())
+		&& testConstructUser()
+		&& testSetUser())
 		return 1;
 }
 
@@ -48,9 +49,23 @@ int testConstructUser () {
 	return 1;
 }
 
+int testSetUser () {
+	User realUser ;
+	User *user = &realUser;
+	setUser(user);
+	assert(strcmp(realUser.firstName, "test") == 0);
+	assert(strcmp(user->firstName, "test") == 0);
+	assert(strcmp((*user).firstName, "test") == 0);
+}
+
+
+
 static constructUser (User *user) {
 	strcpy((*user).firstName, "John");
 	strcpy(user->lastName, "Doe");
 }
 
-
+static setUser (User *user) {
+	if (user != NULL)
+		strcpy(user->firstName, "test");
+}

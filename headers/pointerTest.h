@@ -1,3 +1,7 @@
+
+
+int runPointerTest();
+
 /**
  * @return true (1) if the tests did end successfully 
  * otherwise an error (assert) is raised up.
@@ -28,3 +32,19 @@ int testPointer2();
 static void incrementBy1AndBy2(int *a, int *b);
 
 int testStaticArray();
+
+int testPointerAndFunction();
+
+int testMyStrLen();
+
+int testMyStrCpy();
+
+int testMyIntCpy();
+
+static mystrlen(const char *s);
+
+static char * mystrcpy (char *destination, const char *origin);
+
+static int * myintcpy (int *destination, const int *source, const int size);
+	
+

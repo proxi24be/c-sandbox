@@ -38,5 +38,7 @@ int testConstructUser ();
 
 static constructUser (User *user);
 
+static setUser (User *user);
+
 
 #endif

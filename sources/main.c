@@ -3,21 +3,15 @@
 # include <string.h>
 # include "sandbox.h"
 # include "stringTest.h"
-# include "test.h"
+# include "pointerTest.h"
 # include "structTest.h"
 
 
 
 int main () {
 
-	if (testParamStatic())
-		printf("test param static function did end successfully\n");
-
-	if (testPointer1())
-		printf("the test pointer1 did end successfully\n");
-
-	if (testPointer2())
-		printf("the test pointer2 did end successfully\n");
+	if (runPointerTest())
+		printf("All the tests in pointerTest.c did complete successfully\n");
 
 	if (testStaticArray())
 		printf("the test staticArray did end successfully\n");
@@ -27,6 +21,7 @@ int main () {
 
 	if (runStructTest())
 		printf("All the tests in structTest.c did complete successfully\n");
+
 
 	return 0;
 }
